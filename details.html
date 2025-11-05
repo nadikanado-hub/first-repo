@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="canonical" href="https://1fmovie.com/details.html">
     <link href="http://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link href="css/video-js.css" rel="stylesheet">
@@ -26,49 +28,6 @@
     <link rel="stylesheet" href="content-locker/adbluemedia-locker.css">
    
 <style>
-        /* Image loading styles */
-        #w-info .poster {
-            position: relative;
-            background-color: #1c242c;
-            min-height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #w-info .poster img {
-            width: 100%;
-            height: auto;
-            display: block;
-            background-color: #1c242c;
-        }
-        
-        #w-info .poster::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, #1c242c 0%, #2a3441 100%);
-            opacity: 0.5;
-            z-index: -1;
-        }
-        
-        #w-info .poster img[style*="opacity: 0"] {
-            background-color: #1c242c;
-        }
-        
-        /* Hide content initially until JavaScript loads it */
-        #w-info {
-            min-height: 400px;
-        }
-        
-        #w-info[style*="opacity: 0"] {
-            pointer-events: none;
-        }
-    </style>
-    <style>
         .video-js .vjs-big-play-button {
             line-height: 2.5em;
             height: 2.8em;
@@ -188,6 +147,18 @@
             color: #000000
         }
     </style>
+    <style>
+        /* Fix background image display - use cover but ensure proper positioning */
+        #watch .play {
+            background-size: cover !important;
+            background-position: center center !important;
+        }
+        
+        /* Reduce overlay darkness to show more of the image */
+        #watch .play:before {
+            opacity: 0.6 !important;
+        }
+    </style>
    
 </head>
 <body oncontextmenu="return false">
@@ -243,7 +214,7 @@
             <div class="row">
                     <div class="col d-flex justify-content-center">
                         <a onclick="showAdBlueLocker()" class="btn btn-outline-info mx-1">Watch Now <i class="fa fa-film" aria-hidden="false"></i></a>
-                        <a onclick="showAdBlueLocker()" class="btn btn-outline-info mx-1">Download <i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                        <a onclick="showAdBlueLocker()" class="btn btn-outline-info mx-1">Download <i class="fa fa-download" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -632,30 +603,29 @@
                             });
                         }
 
-                        // Update poster with preloading to prevent image flash
+                        // Update poster with preloading
                         const posterImg = document.querySelector('#w-info .poster img');
-                        if (posterImg && item.poster) {
-                            // Hide image initially
-                            posterImg.style.opacity = '0';
-                            
-                            // Preload the image
-                            const img = new Image();
-                            img.onload = function() {
-                                // Image loaded successfully - update src and show
-                                posterImg.src = item.poster;
+                        if (posterImg) {
+                            if (item.poster) {
+                                // Preload the image
+                                const img = new Image();
+                                img.onload = function() {
+                                    // Image loaded successfully - update src and show
+                                    posterImg.src = item.poster;
+                                    posterImg.alt = escapeHtml(item.title);
+                                    posterImg.style.opacity = '1';
+                                };
+                                img.onerror = function() {
+                                    // Image failed to load - keep it hidden
+                                    console.warn('Poster image failed to load:', item.poster);
+                                    posterImg.style.opacity = '0';
+                                    posterImg.alt = escapeHtml(item.title);
+                                };
+                                img.src = item.poster;
+                            } else {
                                 posterImg.alt = escapeHtml(item.title);
-                                posterImg.style.opacity = '1';
-                            };
-                            img.onerror = function() {
-                                // Image failed to load - show placeholder or hide
                                 posterImg.style.opacity = '0';
-                                posterImg.alt = escapeHtml(item.title);
-                            };
-                            img.src = item.poster;
-                        } else if (posterImg) {
-                            // Fallback if no poster
-                            posterImg.alt = escapeHtml(item.title);
-                            posterImg.style.opacity = '0';
+                            }
                         }
 
                         // Update title
@@ -741,21 +711,18 @@
                             canonical: metaCanonical?.href
                         });
 
-                        // Update background image with preloading
+                        // Update background image - resize if using original size
                         const playElement = document.querySelector('.play');
                         if (playElement && item.thumbnail) {
-                            // Preload the background image
-                            const bgImg = new Image();
-                            bgImg.onload = function() {
-                                // Background image loaded - apply it
-                                playElement.style.backgroundImage = `url(${item.thumbnail})`;
-                                playElement.style.transition = 'background-image 0.3s ease-in-out';
-                            };
-                            bgImg.onerror = function() {
-                                // Background image failed to load - keep current or use default
-                                console.warn('Background thumbnail failed to load:', item.thumbnail);
-                            };
-                            bgImg.src = item.thumbnail;
+                            // Replace /t/p/original with /t/p/w1280 for better performance and display
+                            let thumbnailUrl = item.thumbnail;
+                            if (thumbnailUrl.includes('/t/p/original')) {
+                                thumbnailUrl = thumbnailUrl.replace('/t/p/original', '/t/p/w1280');
+                            }
+                            playElement.style.backgroundImage = `url(${thumbnailUrl})`;
+                            // Ensure background displays properly with cover
+                            playElement.style.setProperty('background-size', 'cover', 'important');
+                            playElement.style.setProperty('background-position', 'center center', 'important');
                         }
 
                         // Handle different content types

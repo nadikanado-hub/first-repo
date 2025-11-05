@@ -271,6 +271,22 @@
 			"cast": "Amy Poehler, Maya Hawke, Kensington Tallman, Liza Lapira, Tony Hale, Lewis Black",
 			"production": "Pixar",
 			"vidLink": "https://jbdhcbkjbv"
+		},
+		{
+			"id": 1197137,
+			"title": "Black Phone 2",
+			"description": "Four years after escaping The Grabber, Finney Blake is struggling with his life after captivity. When his sister Gwen begins receiving calls in her dreams from the black phone and seeing disturbing visions of three boys being stalked at a winter camp, the siblings become determined to solve the mystery and confront a killer who has grown more powerful in death and more significant to them than either could imagine.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/oe2TOWykcLSGq67XPH4Bb0N1oU3.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/xUWUODKPIilQoFUzjHM6wKJkP3Y.jpg",
+			"quality": "4K",
+			"duration": "1h 54m",
+			"rating": "7.1",
+			"genre": "Horror, Thriller",
+			"releaseDate": "2025",
+			"director": "Scott Derrickson",
+			"cast": "Ethan Hawke, Mason Thames, Madeleine McGraw, Demián Bichir, Miguel Mora, Jeremy Davies",
+			"production": "Blumhouse Productions",
+			"vidLink": "vids/Universal.mp4"
 		}
 	],
 	"Series": [
@@ -573,16 +589,17 @@
 			"season": "season 1",
 			"seasonEpisodesVids": [
 				"https://1cima.com/hbo.mp4",
-        "https://1cima.com/hbo.mp4",
-        "https://1cima.com/hbo.mp4",
-        "https://1cima.com/hbo.mp4",
-        "https://1cima.com/hbo.mp4",
-        "https://1cima.com/hbo.mp4"
+				"https://1cima.com/hbo.mp4",
+				"https://1cima.com/hbo.mp4",
+				"https://1cima.com/hbo.mp4",
+				"https://1cima.com/hbo.mp4",
+				"https://1cima.com/hbo.mp4"
 			]
 		}
 	],
 	"HomeSliderIds": [
-    200875,
+		1197137,
+		200875,
 		1311031,
 		194766,
 		617126,
@@ -601,7 +618,7 @@
 		1243341
 	],
 	"TrendingNowIds": [
-    200875,
+		200875,
 		1311031,
 		194766,
 		617126,
@@ -620,6 +637,7 @@
 		1243341
 	],
 	"RecommendedIds": [
+		1197137,
 		1311031,
 		194766,
 		617126,
