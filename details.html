@@ -310,9 +310,9 @@
                                             // Filter out current movie
                                             const filteredMovies = movies.filter(movie => movie.id != currentId);
                                             
-                                            // Shuffle the movies and take up to 10
+                                            // Shuffle the movies and take up to 5
                                             const shuffledMovies = shuffleArray(filteredMovies);
-                                            const recommendedMovies = shuffledMovies.slice(0, Math.min(10, shuffledMovies.length));
+                                            const recommendedMovies = shuffledMovies.slice(0, Math.min(5, shuffledMovies.length));
                                             
                                             // Generate HTML for recommended movies
                                             const moviesHtml = recommendedMovies.map(movie => {
