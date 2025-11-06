@@ -14,7 +14,7 @@
 			"director": "Christopher McQuarrie",
 			"cast": "Tom Cruise, Hayley Atwell, Ving Rhames, Simon Pegg, Esai Morales, Pom Klementieff",
 			"production": "Paramount Pictures",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 617126,
@@ -30,7 +30,7 @@
 			"director": "Matt Shakman",
 			"cast": "Pedro Pascal, Vanessa Kirby, Ebon Moss‑Bachrach, Joseph Quinn, Ralph Ineson, Julia Garner, Paul Walter Hauser, Natasha Lyonne",
 			"production": "Marvel Studios",
-			"vidLink": "vids/marvel.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/marvel.mp4"
 		},
 		{
 			"id": 1087192,
@@ -46,7 +46,7 @@
 			"director": "Dean DeBlois",
 			"cast": "Mason Thames, Nico Parker, Gerard Butler, Nick Frost, Gabriel Howell, Julian Dennison",
 			"production": "DreamWorks Animation",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 552524,
@@ -62,7 +62,7 @@
 			"director": "Dean Fleischer Camp",
 			"cast": "Maia Kealoha, Sydney Agudong, Chris Sanders, Zach Galifianakis, Billy Magnussen, Tia Carrere",
 			"production": "Walt Disney Pictures",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 986056,
@@ -78,7 +78,7 @@
 			"director": "Jake Schreier",
 			"cast": "Florence Pugh, Sebastian Stan, Julia Louis‑Dreyfus, Lewis Pullman, David Harbour, Wyatt Russell, Hannah John‑Kamen, Olga Kurylenko, Geraldine Viswanathan",
 			"production": "Marvel Studios",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 1071585,
@@ -94,7 +94,7 @@
 			"director": "Gerard Johnstone",
 			"cast": "Jenna Davis, Allison Williams, Violet McGraw, Ivanna Sakhno, Amie Donald, Brian Jordan Alvarez, Jen Van Epps, Aristotle Athari, Timm Sharp",
 			"production": "Lakeshore Entertainment",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 911430,
@@ -110,7 +110,7 @@
 			"director": "Joseph Kosinski",
 			"cast": "Brad Pitt, Damson Idris, Javier Bardem, Kerry Condon, Tobias Menzies, Kim Bodnia, Sarah Niles, Will Merrick, Joseph Balderrama",
 			"production": "20th Century Studios",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 1061474,
@@ -126,7 +126,7 @@
 			"director": "James Gunn",
 			"cast": "David Corenswet, Rachel Brosnahan, Nicholas Hoult, Isabela Merced, Skyler Gisondo, Nathan Fillion",
 			"production": "DC Studios",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 1243341,
@@ -142,7 +142,7 @@
 			"director": "Paul Hoen",
 			"cast": "Meg Donnelly, Milo Manheim, Chandler Kinney, Kylee Russell, Freya Skye, Malachi Barton, Julian Lerner, Swayam Bhatia, Mekonnen Knife",
 			"production": "Disney Channel",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 1311031,
@@ -158,119 +158,7 @@
 			"director": "Haruo Sotozaki",
 			"cast": "Natsuki Hanae, Akari Kitō, Hiro Shimono, Yoshitsugu Matsuoka, Takahiro Sakurai, Kana Hanazawa",
 			"production": "ufotable",
-			"vidLink": "vids/Universal.mp4"
-		},
-		{
-			"id": 1072790,
-			"title": "Anyone But You",
-			"description": "After an amazing first date, Bea and Ben’s fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. So they do what any two mature adults would do: pretend to be a couple.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/j9eOeLlTGoHoM8BNUJVNyWmIvCi.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
-			"quality": "4K",
-			"duration": "1h 43m",
-			"rating": "6.9",
-			"genre": "Romance, Comedy",
-			"releaseDate": "2023",
-			"director": "Will Gluck",
-			"cast": "Sydney Sweeney, Glen Powell, Mia Artemis, Nat Buchanan, GaTa, Alexandra Shipp",
-			"production": "Olive Bridge Entertainment",
-			"vidLink": "https://jbdhcbkjbv"
-		},
-		{
-			"id": 1184918,
-			"title": "The Wild Robot",
-			"description": "After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/1pmXyN3sKeYoUhu5VBZiDU4BX21.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
-			"quality": "4K",
-			"duration": "1h 42m",
-			"rating": "8.3",
-			"genre": "Animation, Science Fiction, Family",
-			"releaseDate": "2024",
-			"director": "Chris Sanders",
-			"cast": "Lupita Nyong'o, Pedro Pascal, Kit Connor, Bill Nighy, Stephanie Hsu, Matt Berry",
-			"production": "DreamWorks Animation",
-			"vidLink": "https://jbdhcbkjbv"
-		},
-		{
-			"id": 1066262,
-			"title": "The Convert",
-			"description": "Munro, a soldier turned lay preacher, comes to New Zealand to minister to the first British colonists, but he is converted by the powerful chief Maianui to serve a different purpose.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/tqSg1hHiSWhHAhnjDhhevaFGsP0.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/44frNIZUfL8kYhxOGHeBJsyXUbW.jpg",
-			"quality": "4K",
-			"duration": "1h 59m",
-			"rating": "6.1",
-			"genre": "Action, Drama",
-			"releaseDate": "2024",
-			"director": "Lee Tamahori",
-			"cast": "Guy Pearce, Tioreore Ngatai-Melbourne, Antonio Te Maioha, Jacqueline McKenzie, Te Kohe Tuhaka, Lawrence Makoare",
-			"production": "Jump Film and Television",
-			"vidLink": "https://jbdhcbkjbv"
-		},
-		{
-			"id": 603692,
-			"title": "John Wick: Chapter 4",
-			"description": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/7I6VUdPj6tQECNHdviJkUHD2u89.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-			"quality": "4K",
-			"duration": "2h 50m",
-			"rating": "7.7",
-			"genre": "Action, Thriller, Crime",
-			"releaseDate": "2023",
-			"director": "Chad Stahelski",
-			"cast": "Keanu Reeves, Donnie Yen, Bill Skarsgård, Ian McShane, Laurence Fishburne, Lance Reddick",
-			"production": "Thunder Road",
-			"vidLink": "https://jbdhcbkjbv"
-		},
-		{
-			"id": 1034062,
-			"title": "Mortal Kombat Legends: Cage Match",
-			"description": "In 1980s Hollywood, action star Johnny Cage is looking to become an A-list actor. But when his costar, Jennifer, goes missing from set, Johnny finds himself thrust into a world filled with shadows, danger, and deceit. As he embarks on a bloody journey, Johnny quickly discovers the City of Angels has more than a few devils in its midst.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/p0IejE15lzXBGhRTpKoHPsSrHf7.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/1eKWqTHp4OgKdx1QX1O9LxKHr1M.jpg",
-			"quality": "4K",
-			"duration": "1h 20m",
-			"rating": "6.7",
-			"genre": "Animation, Action, Fantasy",
-			"releaseDate": "2023",
-			"director": "Ethan Spaulding",
-			"cast": "Joel McHale, Jennifer Grey, Dusan Brown, Grey DeLisle, Robin Atkin Downes, Zehra Fazal",
-			"production": "Warner Bros. Animation",
-			"vidLink": "https://jbdhcbkjbv"
-		},
-		{
-			"id": 83533,
-			"title": "Avatar: Fire and Ash",
-			"description": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/pN3eaCl3sqwrerU8UNdp40F2mK0.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/vDdFxksDMkUJjZXd00OKJfwXKre.jpg",
-			"quality": "4K",
-			"duration": "N/A",
-			"rating": "N/A",
-			"genre": "Science Fiction, Adventure, Fantasy",
-			"releaseDate": "2025",
-			"director": "James Cameron",
-			"cast": "Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Kate Winslet, Cliff Curtis",
-			"production": "20th Century Studios",
-			"vidLink": "https://jbdhcbkjbv"
-		},
-		{
-			"id": 1022789,
-			"title": "Inside Out 2",
-			"description": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/p5ozvmdgsmbWe0H8Xk7Rc8SCwAB.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
-			"quality": "4K",
-			"duration": "1h 37m",
-			"rating": "7.6",
-			"genre": "Animation, Adventure, Comedy, Family",
-			"releaseDate": "2024",
-			"director": "Kelsey Mann",
-			"cast": "Amy Poehler, Maya Hawke, Kensington Tallman, Liza Lapira, Tony Hale, Lewis Black",
-			"production": "Pixar",
-			"vidLink": "https://jbdhcbkjbv"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
 		},
 		{
 			"id": 1197137,
@@ -286,97 +174,42 @@
 			"director": "Scott Derrickson",
 			"cast": "Ethan Hawke, Mason Thames, Madeleine McGraw, Demián Bichir, Miguel Mora, Jeremy Davies",
 			"production": "Blumhouse Productions",
-			"vidLink": "vids/Universal.mp4"
+			"vidLink": "https://videos-9ds.pages.dev/Universal.mp4"
+		},
+		{
+			"id": 1156594,
+			"title": "Our Fault",
+			"description": "Jenna and Lion's wedding brings about the long-awaited reunion between Noah and Nick after their breakup. Nick's inability to forgive Noah stands as an insurmountable barrier. He, heir to his grandfather's businesses, and she, starting her professional life, resist fueling a flame that's still alive. But now that their paths have crossed again, will love be stronger than resentment?",
+			"thumbnail": "https://image.tmdb.org/t/p/original/7QirCB1o80NEFpQGlQRZerZbQEp.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/yzqHt4m1SeY9FbPrfZ0C2Hi9x1s.jpg",
+			"quality": "4K",
+			"duration": "1h 52m",
+			"rating": "7.5",
+			"genre": "Romance, Drama",
+			"releaseDate": "2025",
+			"director": "Domingo González",
+			"cast": "Nicole Wallace, Gabriel Guevara, Gabriela Andrada, Marta Hazas, Goya Toledo, Iván Sánchez",
+			"production": "Pokeepsie Films",
+			"vidLink": "https://popcima.com/images/primevideo.mp4"
+		},
+		{
+			"id": 1327862,
+			"title": "Regretting You",
+			"description": "Morgan Grant and her daughter Clara explore what's left behind after a devastating accident reveals a shocking betrayal and forces them to confront family secrets, redefine love, and rediscover each other.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/amcOpAGkcTEZqmUG1LNM2gYGCam.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/z4gVnxTaks3anTycwKjDmvQSuWt.jpg",
+			"quality": "4K",
+			"duration": "1h 56m",
+			"rating": "7.0",
+			"genre": "Romance, Drama",
+			"releaseDate": "2025",
+			"director": "Josh Boone",
+			"cast": "Mckenna Grace, Allison Williams, Dave Franco, Mason Thames, Willa Fitzgerald, Scott Eastwood",
+			"production": "Harbinger Pictures",
+			"vidLink": "https://popcima.com/images/paramount.mp4"
 		}
 	],
 	"Series": [
-		{
-			"id": 248852,
-			"title": "UNTAMED",
-			"description": "Kyle Turner is a special agent for the National Parks Service who works to enforce human law in nature's vast wilderness. The investigation of a brutal death sends Inman on a collision course with the dark secrets within the park, and in his own past.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/oGsh97JAA6LYu92B6TEswrjac8W.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/zqVjGBzJgC2lN9O5Baxborh1IMs.jpg",
-			"quality": "HD",
-			"duration": "N/A",
-			"rating": "9.7",
-			"genre": "Mystery, Drama",
-			"releaseDate": "2025",
-			"director": "Eric Bana",
-			"cast": "Eric Bana, Sam Neill, Rosemarie DeWitt, Lily Santiago, Wilson Bethel",
-			"production": "John Wells Productions",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink"
-			]
-		},
-		{
-			"id": 103516,
-			"title": "Star Trek: Strange New Worlds",
-			"description": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/627K48naKH2Y3Rz47Ydra4qktdI.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
-			"quality": "HD",
-			"duration": "N/A",
-			"rating": "8.1",
-			"genre": "Sci-Fi & Fantasy",
-			"releaseDate": "2022",
-			"director": "Chris Fisher",
-			"cast": "Anson Mount, Ethan Peck, Jess Bush, Christina Chong, Celia Rose Gooding, Melissa Navia",
-			"production": "Secret Hideout",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink"
-			]
-		},
-		{
-			"id": 93405,
-			"title": "Squid Game",
-			"description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
-			"quality": "HD",
-			"duration": "N/A",
-			"rating": "7.9",
-			"genre": "Action & Adventure, Mystery, Drama",
-			"releaseDate": "2021",
-			"director": "N/A",
-			"cast": "Lee Jung-jae, Wi Ha-jun, Yim Si-wan, Jo Yu-ri, Lee Byung-hun, Park Gyu-young",
-			"production": "Siren Pictures",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink"
-			]
-		},
 		{
 			"id": 194766,
 			"title": "The Summer I Turned Pretty",
@@ -393,162 +226,17 @@
 			"production": "Amazon Studios",
 			"season": "season 3",
 			"seasonEpisodesVids": [
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4",
-				"vids/primee.mp4"
-			]
-		},
-		{
-			"id": 259909,
-			"title": "Dexter: Resurrection",
-			"description": "Dexter Morgan awakens from a coma to find Harrison gone without a trace. Realizing the weight of what he put his son through, Dexter sets out for New York City, determined to find him and make things right. But closure won't come easy. When Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast. As father and son navigate their own darkness in the city that never sleeps, they soon find themselves deeper than they ever imagined - and that the only way out is together.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/l5jzuehwynnoEWUb9z25auHXQM.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/jSoRKtjlqQi9Hb1hmGQ8cbDnCbj.jpg",
-			"quality": "HD",
-			"duration": "N/A",
-			"rating": "8.9",
-			"genre": "Crime, Drama",
-			"releaseDate": "2025",
-			"director": "Michael C. Hall",
-			"cast": "Michael C. Hall, Jack Alcott, Uma Thurman, Peter Dinklage, David Zayas, James Remar",
-			"production": "MTV Entertainment Studios",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink",
-				"vidLink"
-			]
-		},
-		{
-			"id": 93740,
-			"title": "Foundation",
-			"description": "Follow a band of exiles on their monumental journey to save humanity and rebuild civilization amid the fall of the Galactic Empire.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/7NNNXo0qG2SqH4JoG7GPvJ2hzes.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/tg9I5pOY4M9CKj8U0cxVBTsm5eh.jpg",
-			"quality": "HD",
-			"duration": "N/A",
-			"rating": "7.8",
-			"genre": "Sci-Fi & Fantasy, Drama",
-			"releaseDate": "2021",
-			"director": "Roxann Dawson",
-			"cast": "Jared Harris, Lee Pace, Lou Llobell, Leah Harvey, Laura Birn, Cassian Bilton",
-			"production": "Skydance Television",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4"
-			]
-		},
-		{
-			"id": 239826,
-			"title": "Ballard",
-			"description": "Detective Renée Ballard plunges into a web of murder and corruption as she hunts a ruthless serial killer and uncovers a sinister police conspiracy that threatens everything she stands for. With her own demons nipping at her heels, Ballard must outwit both criminals and colleagues to bring long-overdue justice to the victims and their families.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/fQ3LSr8KpLBz4xegkGdLd07AlI6.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/vHQGu6ducKC7JcDU6lqWyx7tWW5.jpg",
-			"quality": "HD",
-			"duration": "N/A",
-			"rating": "7.4",
-			"genre": "Crime, Drama",
-			"releaseDate": "2025",
-			"director": "Henrik Bastin",
-			"cast": "Maggie Q, Courtney Taylor, John Carroll Lynch, Michael Mosley, Rebecca Field, Victoria Moroles",
-			"production": "Fabel Entertainment",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4"
-			]
-		},
-		{
-			"id": 241554,
-			"title": "Murderbot",
-			"description": "In a high-tech future, a rogue security robot secretly gains free will. To stay hidden, it reluctantly joins a new mission protecting scientists on a dangerous planet...even though it just wants to binge soap operas.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/svdtJsa1ZhZ31zcc5XGEMbbI52j.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/9uRLThggIXKZYtaqk5snYQdH51t.jpg",
-			"quality": "HD",
-			"duration": "N/A",
-			"rating": "7.5",
-			"genre": "Comedy, Drama, Sci-Fi & Fantasy",
-			"releaseDate": "2025",
-			"director": "Alexander Skarsgård",
-			"cast": "Alexander Skarsgård, Noma Dumezweni, David Dastmalchian, Sabrina Wu, Akshay Khanna, Tamara Podemski",
-			"production": "Depth of Field",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4"
-			]
-		},
-		{
-			"id": 253372,
-			"title": "The Institute",
-			"description": "When 14 year old genius Luke Ellis is kidnapped, he awakens at The Institute, a facility full of children who all got there the same way he did, and who are all possessed of unusual abilities. In a nearby town, haunted former police officer Tim Jamieson has come looking to start a new life, but the peace and quiet won’t last, as his story and Luke’s are destined to collide.",
-			"thumbnail": "https://image.tmdb.org/t/p/original/mcU5nwUqPJB6GeElDhKA68LKhqD.jpg",
-			"poster": "https://image.tmdb.org/t/p/w342/7JXZdWifaa6wL0XLRi0GJOlOA8y.jpg",
-			"quality": "HD",
-			"duration": "58 min",
-			"rating": "8.2",
-			"genre": "Mystery, Sci-Fi & Fantasy",
-			"releaseDate": "2025",
-			"director": "Benjamin Cavell",
-			"cast": "Ben Barnes, Joe Freeman, Simone Miller, Fionn Laird, Hannah Galway, Julian Richings",
-			"production": "MGM+ Studios",
-			"season": "season 3",
-			"seasonEpisodesVids": [
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4",
-				"https://1cima.com/hbo.mp4"
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4",
+				"https://videos-9ds.pages.dev/primee.mp4"
 			]
 		},
 		{
@@ -567,9 +255,18 @@
 			"production": "Science SARU",
 			"season": "season 3",
 			"seasonEpisodesVids": [
-				"https://cdn.maydream.com/adforum-media/34719022/ad_34719022_3818ce3876e328cb_web.mp4?GoogleAccessId=app-adforum-production%40maydreamcloud.iam.gserviceaccount.com&Expires=1752833501&Signature=MyyPNyoRsHWzl3bhCJH5AJqHHlRK5tw1kdAXhWlzfrBXfE6t%2FQSj%2BKLWaSyNbPVfxeupBeUCF0SH%2BiFHB7Q6PPtS33mJy3MX9QmaQcocT1Z3JCtjJ4OIubg7WKNPUIy6z5G4MnXIQcTYQ6e%2B0c17h98%2BDvSYbtfekUqE9fCHvFu%2BhGwmMiLPMqTJL%2F05ZwtiKDaVjKwHR%2F2upPaDDjNnK9zXXNamaDZIL%2F8rGBNdBOsepSMXh8wh4br6oBJpOONIxmD%2Fh%2FuNbhCk9mafZ63%2Br7yCz3WBb5jqKTTo3yUTStA44pIBRFUHvGD0JKqyeP%2FYKGITtYGSfXMMg%2BtgEkjHfA%3D%3D",
-				" ",
-				"https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4"
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4",
+				"https://1fmovie.com/dandadan.mp4"
 			]
 		},
 		{
@@ -595,11 +292,36 @@
 				"https://1cima.com/hbo.mp4",
 				"https://1cima.com/hbo.mp4"
 			]
+		},
+		{
+			"id": 94954,
+			"title": "Hazbin Hotel",
+			"description": "In attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/9K6QtLqyocVHgIZe4yqCIl1q2ZR.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/aVYHMW8pdzJ9qG1OGRMKyGy9xor.jpg",
+			"quality": "HD",
+			"duration": "N/A",
+			"rating": "8.7",
+			"genre": "Animation, Comedy, Drama, Sci-Fi & Fantasy",
+			"releaseDate": "2024",
+			"director": "Vivienne Medrano",
+			"cast": "Stephanie Beatriz, Keith David, Kimiko Glenn, Erika Henningsen, Blake Roman, Amir Talai",
+			"production": "A24",
+			"season": "season 2",
+			"seasonEpisodesVids": [
+				"https://1cima.com/Hotel.mp4",
+				"https://1cima.com/Hotel.mp4",
+				"https://1cima.com/Hotel.mp4",
+				"https://1cima.com/Hotel.mp4"
+			]
 		}
 	],
 	"HomeSliderIds": [
-		1197137,
 		200875,
+		1197137,
+		94954,
+		200875,
+		1156594,
 		1311031,
 		194766,
 		617126,
@@ -609,17 +331,15 @@
 		1071585,
 		911430,
 		1061474,
-		253372,
 		240411,
 		575265,
-		1022789,
-		83533,
-		1072790,
 		1243341
 	],
 	"TrendingNowIds": [
 		200875,
 		1311031,
+		94954,
+		1156594,
 		194766,
 		617126,
 		1087192,
@@ -628,18 +348,18 @@
 		1071585,
 		911430,
 		1061474,
-		253372,
 		240411,
 		575265,
-		1022789,
-		83533,
-		1072790,
 		1243341
 	],
 	"RecommendedIds": [
+		200875,
 		1197137,
-		1311031,
+		94954,
 		194766,
+		1156594,
+		1327862,
+		1311031,
 		617126,
 		1087192,
 		552524,
@@ -647,40 +367,27 @@
 		1071585,
 		911430,
 		1061474,
-		253372,
 		240411,
 		575265,
-		1022789,
-		83533,
-		1072790,
 		1243341
 	],
 	"TopIds": [
+		200875,
 		1311031,
-		253372,
 		240411,
-		575265,
-		1022789,
-		83533,
-		1072790
+		575265
 	],
 	"LatestIds": [
+		1197137,
+		1156594,
+		1327862,
 		1311031,
-		253372,
-		240411,
-		575265,
-		1022789,
-		83533,
-		1072790
+		575265
 	],
 	"MoviesUpdatedIds": [
 		1311031,
-		253372,
 		240411,
-		575265,
-		1022789,
-		83533,
-		1072790
+		575265
 	],
 	"LockerData": {
 		"LockerIt": "4151330",
