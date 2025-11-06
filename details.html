@@ -640,9 +640,9 @@
                             qualityElement.textContent = item.quality || qualityElement.textContent;
                         }
 
-                        const ratingElement = document.querySelector('#w-info .meta span:nth-child(3)');
+                        const ratingElement = document.querySelector('#w-info .meta .rating');
                         if (ratingElement) {
-                            ratingElement.innerHTML = `<i class="fa fa-star" style="color: yellow;"></i> ${item.rating || ratingElement.textContent}`;
+                            ratingElement.textContent = item.rating || ratingElement.textContent;
                         }
 
                         const yearElement = document.querySelector('#w-info .meta .year');
