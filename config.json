@@ -207,6 +207,22 @@
 			"cast": "Mckenna Grace, Allison Williams, Dave Franco, Mason Thames, Willa Fitzgerald, Scott Eastwood",
 			"production": "Harbinger Pictures",
 			"vidLink": "https://popcima.com/images/paramount.mp4"
+		},
+		{
+			"id": 1242898,
+			"title": "Predator: Badlands",
+			"description": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/ef2QSeBkrYhAdfsWGXmp0lvH0T1.jpg",
+			"quality": "4K",
+			"duration": "1h 47m",
+			"rating": "6.3",
+			"genre": "Action, Science Fiction, Adventure",
+			"releaseDate": "2025",
+			"director": "Dan Trachtenberg",
+			"cast": "Elle Fanning, Dimitrius Schuster-Koloamatangi, Rohinal Nayaran, Michael Homick, Stefan Grube, Reuben De Jong",
+			"production": "20th Century Studios",
+			"vidLink": "https://goflixo.com/movie/paramount-96min.mp4"
 		}
 	],
 	"Series": [
@@ -314,9 +330,35 @@
 				"https://1cima.com/Hotel.mp4",
 				"https://1cima.com/Hotel.mp4"
 			]
+		},
+		{
+			"id": 250670,
+			"title": "Maxton Hall - The World Between Us",
+			"description": "When Ruby unwittingly witnesses an explosive secret at Maxton Hall private school, the arrogant millionaire heir James Beaufort has to deal with the quick-witted scholarship student for better or worse: He is determined to silence Ruby. Their passionate exchange of words unexpectedly ignites a spark...",
+			"thumbnail": "https://image.tmdb.org/t/p/original/rKL1oWbuC1rfMCg6sSsWlqHPPem.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/slKAbvY2CjAIyJFqoLSh1WICzg6.jpg",
+			"quality": "HD",
+			"duration": "N/A",
+			"rating": "8.4",
+			"genre": "Drama",
+			"releaseDate": "2024",
+			"director": "N/A",
+			"cast": "N/A",
+			"production": "UFA Fiction",
+			"season": "season 1",
+			"seasonEpisodesVids": [
+				"https://videos-9ds.pages.dev/the-summer-i-turned-pretty-45min.mp4",
+				"https://videos-9ds.pages.dev/the-summer-i-turned-pretty-45min.mp4",
+				"https://videos-9ds.pages.dev/the-summer-i-turned-pretty-45min.mp4",
+				"https://videos-9ds.pages.dev/the-summer-i-turned-pretty-45min.mp4",
+				"https://videos-9ds.pages.dev/the-summer-i-turned-pretty-45min.mp4",
+				"https://videos-9ds.pages.dev/the-summer-i-turned-pretty-45min.mp4"
+			]
 		}
 	],
 	"HomeSliderIds": [
+		250670,
+        1242898,
 		200875,
 		1197137,
 		94954,
@@ -336,6 +378,8 @@
 		1243341
 	],
 	"TrendingNowIds": [
+		250670,
+        1242898,
 		200875,
 		1311031,
 		94954,
@@ -353,6 +397,8 @@
 		1243341
 	],
 	"RecommendedIds": [
+		250670,
+        1242898,
 		200875,
 		1197137,
 		94954,
@@ -372,12 +418,16 @@
 		1243341
 	],
 	"TopIds": [
+		250670,
+        1242898,
 		200875,
 		1311031,
 		240411,
 		575265
 	],
 	"LatestIds": [
+		250670,
+        1242898,
 		1197137,
 		1156594,
 		1327862,
@@ -385,6 +435,7 @@
 		575265
 	],
 	"MoviesUpdatedIds": [
+		1242898,
 		1311031,
 		240411,
 		575265
