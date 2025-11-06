@@ -6,17 +6,23 @@
 (function() {
     'use strict';
     
-    // Configuration from locker-design-by-me.md
-    const CONFIG = {
-        userId: '464413',
-        apiKey: 'dce55cd36b365facd86d1f15397ea8aa',
+    // Configuration loaded from .env.js file
+    // If .env.js is not loaded, use default values
+    const CONFIG = window.ADBLUE_CONFIG || {
+        userId: '',
+        apiKey: '',
         offerFeedUrl: 'https://d1y3y09sav47f5.cloudfront.net/public/offers/feed.php',
         checkLeadsUrl: 'https://d1y3y09sav47f5.cloudfront.net/public/external/check2.php',
         numOffers: 3,
-        requiredOffers: 1, // Changed back to 1 offer
-        checkInterval: 15000, // 15 seconds
-        testing: 0 // Set to 1 for testing
+        requiredOffers: 1,
+        checkInterval: 15000,
+        testing: 0
     };
+    
+    // Validate that API credentials are loaded
+    if (!CONFIG.userId || !CONFIG.apiKey) {
+        console.error('AdBlueMedia API credentials not found. Please ensure .env.js is loaded before this script.');
+    }
     
     let lockerInstance = null;
     let checkIntervalId = null;
