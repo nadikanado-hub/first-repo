@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /content-locker/
+
+Sitemap: https://1fmovie.com/sitemap.xml
