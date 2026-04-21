@@ -997,7 +997,30 @@
             });
             
             myPlayer.paused();
-            
+
+            // ── Mobile: auto-fullscreen on play ──────────────────────────
+            var isMobileDevice = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent)
+                                 || ('ontouchstart' in window && window.innerWidth <= 900);
+
+            if (isMobileDevice) {
+                myPlayer.on('play', function() {
+                    // Only enter fullscreen if not already in it
+                    if (!myPlayer.isFullscreen()) {
+                        try {
+                            // Standard Video.js fullscreen API (works on Android & modern iOS)
+                            myPlayer.requestFullscreen();
+                        } catch (e) {
+                            // Fallback: use native webkitEnterFullscreen on the <video> element (older iOS)
+                            var nativeVideo = myPlayer.el().querySelector('video');
+                            if (nativeVideo && nativeVideo.webkitEnterFullscreen) {
+                                nativeVideo.webkitEnterFullscreen();
+                            }
+                        }
+                    }
+                });
+            }
+            // ─────────────────────────────────────────────────────────────
+
             // Mobile touch support - tap video to play/pause
             myPlayer.ready(function() {
                 var videoElement = myPlayer.el().querySelector('video');
