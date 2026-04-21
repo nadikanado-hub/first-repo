@@ -12935,18 +12935,17 @@ footer .top .heading {
 
 @media screen and (max-width: 768px) {
     #watch .play {
-        background:#212529!important
-        m
+        background:#212529!important;
     }
 
     #watch #player {
-        height: 30em
+        height: auto;
     }
 }
 
 @media screen and (max-width: 576px) {
     #watch #player {
-        height:15em
+        height: auto;
     }
 
     #watch #controls .items {

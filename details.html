@@ -155,16 +155,48 @@
         }
     </style>
     <style>
-        /* Fix background image display - use cover but ensure proper positioning */
+        /* Fix background image display */
         #watch .play {
             background-size: cover !important;
             background-position: center center !important;
         }
-        
-        /* Reduce overlay darkness to show more of the image */
+
+        /* Reduce overlay darkness on desktop */
         #watch .play:before {
             opacity: 0.6 !important;
         }
+
+        /* ── Mobile video fix ────────────────────────────────────────── */
+        /* On mobile hide the decorative dark overlays — they can stack
+           over the video canvas and cause a black screen                */
+        @media (max-width: 768px) {
+            #watch .play:before,
+            #watch .play:after {
+                display: none !important;
+            }
+        }
+
+        /* Ensure the Video.js wrapper and its internal <video> always
+           fill the container and stay above any overlays               */
+        #watch .video-js {
+            position: relative;
+            z-index: 5;
+            width: 100% !important;
+        }
+        #watch .vjs-tech {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        /* BgA wrapper: make sure it collapses to the video's natural
+           16:9 height rather than 0                                    */
+        #watch .BgA {
+            width: 100%;
+            display: block;
+        }
+        /* ─────────────────────────────────────────────────────────────── */
     </style>
    
 </head>
@@ -208,7 +240,7 @@
                     <div style="height:6em"></div>
                         <div id="player" style="height: 100%">
                             <div class="BgA">    
-                                <video id="my-video" class="video-js vjs-16-9 vjs-big-play-centered" controls="" width="600" height="315" poster="" data-setup="" webkit-playsinline="true" playsinline="true">
+                                <video id="my-video" class="video-js vjs-big-play-centered" controls playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-player-fullscreen="false" preload="auto" width="600" height="315" poster="" data-setup='{"fluid":true,"playsinline":true}'>
                                     <p>Your browser does not support the video tag.</p>
                                 </video>
                             </div>
@@ -440,7 +472,8 @@
     <script src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/lazysizes.min.js"></script>    
     <script src="js/video.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- hls.js removed: Video.js handles HLS natively via its VHS tech.
+         Keeping both causes conflicts on iOS/Android. -->
     
     <script>
         // Global variable to store the current series data
@@ -919,11 +952,21 @@
                     return;
                 });
 
-            // Initialize Video.js player (exact same as fake-player)
+            // Initialize Video.js player
             myPlayer = videojs("my-video", {
-                fluid: !0,
+                fluid: true,
+                playsinline: true,      // critical: keeps video inline on iOS Safari
+                preload: 'auto',
+                html5: {
+                    vhs: {
+                        overrideNative: false   // let iOS use its native HLS tech
+                    },
+                    nativeVideoTracks: true,
+                    nativeAudioTracks: true,
+                    nativeTextTracks: true
+                },
                 ControlBar: {
-                    DurationDisplay: !0
+                    DurationDisplay: true
                 }
             });
             
