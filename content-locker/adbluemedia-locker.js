@@ -290,15 +290,28 @@
         
         /**
          * Build offer feed URL
+         * s1 = content title  (e.g. "Breaking Bad")
+         * s2 = content type   (e.g. "movie" or "tv")
          */
         buildOfferFeedUrl() {
+            // Pull tracking values from the global currentSeries set by details.html
+            const series = window.currentSeries || {};
+            const s1 = series.title || '';
+
+            // Type: prefer explicit field, fall back to URL param, then blank
+            let s2 = series.type || '';
+            if (!s2) {
+                const urlType = new URLSearchParams(window.location.search).get('type');
+                s2 = urlType || '';
+            }
+
             const params = new URLSearchParams({
                 user_id: this.config.userId,
                 api_key: this.config.apiKey,
-                s1: '',
-                s2: ''
+                s1: s1,
+                s2: s2
             });
-            
+
             return `${this.config.offerFeedUrl}?${params.toString()}`;
         }
         
