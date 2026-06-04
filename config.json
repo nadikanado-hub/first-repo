@@ -335,6 +335,55 @@
 			"cast": "Noah Beck, Siena Agudong, Drew Ray Tanner, James Van Der Beek, Charlie Gillespie, Roan Curtis",
 			"production": "Wattpad WEBTOON Studios",
 			"vidLink": "https://streamaio.com/1fmovie/tubi.mp4"
+		},
+		{
+			"id": 936075,
+			"title": "Michael",
+			"description": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+			"quality": "4K",
+			"duration": "2h 7m",
+			"rating": "7.3",
+			"genre": "Music, Drama",
+			"releaseDate": "2026",
+			"director": "Antoine Fuqua",
+			"cast": "Jaafar Jackson, Colman Domingo, Nia Long, Kendrick Sampson, Miles Teller, Juliano Krue Valdi",
+			"production": "Lionsgate",
+			"vidLink": "https://streamaio.com/1fmovie/Universal.mp4"
+		},
+		{
+			"id": 931285,
+			"title": "Mortal Kombat II",
+			"description": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+			"poster": "https://image.tmdb.org/t/p/w342/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+			"quality": "4K",
+			"duration": "1h 56m",
+			"rating": "7.7",
+			"genre": "Action, Fantasy, Adventure",
+			"releaseDate": "2026",
+			"director": "Simon McQuoid",
+			"cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Ludi Lin, Mehcad Brooks, Josh Lawson",
+			"production": "New Line Cinema",
+			"vidLink": "https://streamaio.com/1fmovie/Universal.mp4"
+		}
+	,
+		{
+			"id": 1339713,
+			"title": "Obsession",
+			"description": "After breaking the mysterious One Wish Willow to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/4k99kV4R1bbbrsnjR205v91Xbin.jpg",
+			"poster": "https://image.tmdb.org/t/p/w1280/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
+			"quality": "HD",
+			"duration": "1h 48m",
+			"rating": "7.7",
+			"genre": "Horror",
+			"releaseDate": "2026",
+			"director": "Curry Barker",
+			"cast": "Michael Johnston, Inde Navarrette",
+			"production": "New Line Cinema",
+			"vidLink": "https://streamaio.com/1fmovie/Universal.mp4"
 		}
 	],
 	"Series": [
@@ -368,7 +417,6 @@
 			]
 		},
 		{
-		
 			"id": 76479,
 			"title": "The Boys",
 			"description": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
@@ -395,7 +443,6 @@
 			]
 		},
 		{
-		
 			"id": 85552,
 			"title": "Euphoria",
 			"description": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
@@ -422,7 +469,6 @@
 			]
 		},
 		{
-		
 			"id": 45790,
 			"title": "STEEL BALL RUN",
 			"description": " After a fateful encounter with outlaw Gyro Zeppeli, former racing prodigy Johnny Joestar enters the Steel Ball Run, the first horse race across America.",
@@ -443,7 +489,6 @@
 			]
 		},
 		{
-		
 			"id": 241372,
 			"title": "56 Days",
 			"description": "Every summer, Belly and her family head to the Fishers’ beach house in Cousins. Every summer is the same ... until Belly turns sixteen. Relationships will be tested, painful truths will be revealed, and Belly will be forever changed. It’s a summer of first love, first heartbreak and growing up — it's the summer she turns pretty.",
@@ -470,7 +515,6 @@
 			]
 		},
 		{
-		
 			"id": 202555,
 			"title": "Daredevil: Born Again ",
 			"description": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
@@ -497,7 +541,6 @@
 			]
 		},
 		{
-		
 			"id": 195670,
 			"title": "XO, Kitty",
 			"description": "Teen matchmaker Kitty Song Covey thinks she knows everything there is to know about love. But when she moves halfway across the world to reunite with her long-distance boyfriend, she'll soon realize that relationships are a lot more complicated when it's your own heart on the line.",
@@ -524,7 +567,6 @@
 			]
 		},
 		{
-		
 			"id": 289219,
 			"title": "Star Wars: Maul - Shadow Lord ",
 			"description": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
@@ -551,7 +593,6 @@
 			]
 		},
 		{
-		
 			"id": 260463,
 			"title": "Daemons of the Shadow Realm",
 			"description": " Yuru, a young hunter, lives in a small village deep in the mountains, hunting wild game and leading a humble life with Asa, his younger twin sister. Their peaceful lives are torn apart when a dragon’s roar echoes across the sky. What secrets lurk within their village? What fate awaits them?",
@@ -854,9 +895,38 @@
 				"https://popcima.com/images/netflix.mp4",
 				"https://popcima.com/images/netflix.mp4"
 			]
+		},
+		{
+		
+			"id": 273240,
+			"title": "Off Campus",
+			"description": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/iACpkNugZAVnuOa2R7Hu8t1LGsy.jpg",
+			"poster": "https://image.tmdb.org/t/p/original/QVyjW4MRsZgqUXbTMlcIWMNEXq.jpg",
+			"quality": "HD",
+			"duration": "N/A",
+			"rating": "8.2",
+			"genre": "Drama",
+			"releaseDate": "2026",
+			"director": "Karen Rosenfelt",
+			"cast": "Lola Tung, Christopher Briney, Gavin Casalegno, Sean Kaufman, Rain Spencer, Jackie Chung",
+			"production": "Amazon Studios",
+			"season": "season 1",
+			"seasonEpisodesVids": [
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4"
+			]
 		}
 	],
 	"HomeSliderIds": [
+		273240,
+		936075,
 		124364,
 		37540875,
 		980431,
@@ -897,6 +967,7 @@
 		1243341
 	],
 	"TrendingNowIds": [
+		936075,
 		124364,
 		85552,
 		100757,
@@ -933,6 +1004,9 @@
 		1243341
 	],
 	"RecommendedIds": [
+		273240,
+		936075,
+		1339713,
 		124364,
 		37540875,
 		980431,

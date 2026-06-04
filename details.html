@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/all_1.css">
     <link rel="stylesheet" href="css/search-dropdown.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <!-- AdBlueMedia Content Locker CSS -->
+    <!-- OGAds Content Locker CSS -->
     <link rel="stylesheet" href="content-locker/adbluemedia-locker.css">
    
 <style>
@@ -252,8 +252,8 @@
         <div class="container py-4">
             <div class="row">
                     <div class="col d-flex justify-content-center">
-                        <a onclick="showAdBlueLocker()" class="btn btn-outline-info mx-1">Watch Now <i class="fa fa-film" aria-hidden="false"></i></a>
-                        <a onclick="showAdBlueLocker()" class="btn btn-outline-info mx-1">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+                        <a onclick="openOgadsLocker()" class="btn btn-outline-info mx-1">Watch Now <i class="fa fa-film" aria-hidden="false"></i></a>
+                        <a onclick="openOgadsLocker()" class="btn btn-outline-info mx-1">Download <i class="fa fa-download" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -481,6 +481,17 @@
         // Global variable to store the Video.js player instance
         let myPlayer = null;
 
+        function openOgadsLocker() {
+            const showLocker = window.showOgadsLocker || window.showAdBlueLocker;
+            if (typeof showLocker !== 'function') return;
+
+            showLocker().onUnlock(function() {
+                if (myPlayer && myPlayer.paused()) {
+                    myPlayer.play();
+                }
+            });
+        }
+
         // Function to get URL parameters
         function getUrlParameter(name) {
             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -587,60 +598,11 @@
                     }
                     
                     if (item) {
-                        currentSeries = item; // Store globally
+                        currentSeries = item;
+                        window.currentSeries = item;
 
-                        // Initialize AdBuildMedia locker dynamically using global LockerData
-                        if (data.LockerData && data.LockerData.LockerIt && data.LockerData.LockerKey && data.LockerData.Lockervar && data.LockerData.LockerSrcUrl) {
-                            console.log('Initializing AdBuildMedia locker with config:', data.LockerData);
-                            
-                            // Create and inject the locker variable script using custom variable name
-                            const varScript = document.createElement('script');
-                            varScript.type = 'text/javascript';
-                            varScript.textContent = `var ${data.LockerData.Lockervar} = { "it": ${data.LockerData.LockerIt}, "key": "${data.LockerData.LockerKey}" };`;
-                            document.head.appendChild(varScript);
-                            console.log('Locker variable script injected:', data.LockerData.Lockervar);
-
-                            // Create and inject the locker main script using custom source URL
-                            const lockerScript = document.createElement('script');
-                            lockerScript.src = data.LockerData.LockerSrcUrl;
-                            lockerScript.async = true;
-                            
-                            // Add load event listener to track when script loads
-                            lockerScript.addEventListener('load', function() {
-                                console.log('AdBuildMedia locker script loaded successfully');
-                                console.log('_bu function available:', typeof window._bu === 'function');
-                                console.log('Locker variable available:', typeof window[data.LockerData.Lockervar] !== 'undefined');
-                            });
-                            
-                            lockerScript.addEventListener('error', function() {
-                                console.error('Failed to load AdBuildMedia locker script from:', data.LockerData.LockerSrcUrl);
-                            });
-                            
-                            document.head.appendChild(lockerScript);
-
-                            console.log('AdBuildMedia locker configured dynamically from global config:', {
-                                it: data.LockerData.LockerIt,
-                                key: data.LockerData.LockerKey,
-                                variable: data.LockerData.Lockervar,
-                                srcUrl: data.LockerData.LockerSrcUrl,
-                                duration: data.LockerData.LockerDurationinSeconds
-                            });
-
-                            // Store global locker data in currentSeries for later use
+                        if (data.LockerData) {
                             currentSeries.LockerData = data.LockerData;
-                            
-                            // Add a delayed check to verify locker is ready
-                            setTimeout(() => {
-                                console.log('Delayed locker check:');
-                                console.log('- _bu function:', typeof window._bu === 'function');
-                                console.log('- Locker variable:', typeof window[data.LockerData.Lockervar] !== 'undefined');
-                                console.log('- Variable value:', window[data.LockerData.Lockervar]);
-                            }, 3000);
-                            
-                        } else {
-                            console.log('Global LockerData or its properties missing from config:', {
-                                LockerData: data.LockerData
-                            });
                         }
 
                         // Update poster with preloading
@@ -983,12 +945,23 @@
                 })
                 .catch(err => console.error('Error loading config:', err));
             
-            // Video.js timeupdate event for AdBlueMedia locker
+            var lockerShown = false;
+
+            function handleLockerUnlock() {
+                lockerShown = true;
+                if (myPlayer && myPlayer.paused()) {
+                    myPlayer.play();
+                }
+            }
+
+            // Video.js timeupdate event for OGAds locker
             myPlayer.on('timeupdate', function(e) {
-                if (myPlayer.currentTime() >= pausetime) {
+                const lockerUnlocked = typeof isOgadsLockerUnlocked === 'function' && isOgadsLockerUnlocked();
+                if (!lockerShown && !lockerUnlocked && myPlayer.currentTime() >= pausetime) {
+                    lockerShown = true;
                     myPlayer.pause();
-                    if (typeof showAdBlueLocker === 'function') {
-                        showAdBlueLocker();
+                    if (typeof showOgadsLocker === 'function') {
+                        showOgadsLocker().onUnlock(handleLockerUnlock);
                     }
                     if (myPlayer.isFullscreen()) {
                         myPlayer.exitFullscreen();
@@ -1250,9 +1223,9 @@
         });
     </script>
     
-    <!-- AdBlueMedia Content Locker Configuration (load before locker script) -->
+    <!-- OGAds Content Locker Configuration (load before locker script) -->
     <script src="content-locker/adblue-config.js"></script>
-    <!-- AdBlueMedia Content Locker JavaScript -->
+    <!-- OGAds Content Locker JavaScript -->
     <script src="content-locker/adbluemedia-locker.js"></script>
 </body>
 </html>

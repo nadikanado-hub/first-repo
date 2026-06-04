@@ -1,17 +1,25 @@
 /**
- * AdBlueMedia API Configuration
- * This file contains sensitive API credentials
- * DO NOT commit this file to version control
+ * OGAds API Configuration
+ * This file contains API credentials and is loaded before the locker script.
  */
 
-window.ADBLUE_CONFIG = {
-    userId: '464413',
-    apiKey: 'dce55cd36b365facd86d1f15397ea8aa',
-    offerFeedUrl: 'https://d1cdbd1x576ga0.cloudfront.net/public/offers/feed.php',
-    checkLeadsUrl: 'https://d1cdbd1x576ga0.cloudfront.net/public/external/check2.php',
-    numOffers: 3,
+window.OGADS_CONFIG = {
+    apiToken: '44512|H5Fdpokq0RngYCWNjzAefFoiL9wXDJypCIlZPPuAba8d6a9e',
+    offerFeedUrl: 'https://appsave.online/api/v2',
+    ipLookupUrls: [
+        'https://api.ipify.org?format=json',
+        'https://api64.ipify.org?format=json'
+    ],
+    maxOffers: 3,
+    minOffers: '',
+    ctype: '',
     requiredOffers: 1,
-    checkInterval: 15000,
-    testing: 0,
+    // postback = unlock only after OGAds conversion hits streamaio.com hub
+    unlockMode: 'postback',
+    projectSlug: '1fmovie',
+    postbackStatusUrl: 'https://streamaio.com/api/unlock-status.php',
+    pollIntervalMs: 3000,
+    pollTimeoutMs: 600000,
+    // Legacy click-unlock (not used when unlockMode is postback)
+    clickUnlockDelay: 1200
 };
-

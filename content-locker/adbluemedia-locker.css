@@ -649,3 +649,41 @@
     }
 }
 
+/* Postback unlock — waiting for OGAds conversion */
+.offer-waiting-status {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: rgba(0, 172, 193, 0.12);
+    border: 1px solid rgba(0, 172, 193, 0.35);
+    text-align: center;
+}
+
+.offer-waiting-status .waiting-message,
+.offer-waiting-status .waiting-timeout-message {
+    margin: 10px 0 0;
+    font-size: 13px;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.offer-waiting-status .waiting-timeout-message {
+    color: #ffc107;
+}
+
+.waiting-spinner {
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    border: 3px solid rgba(0, 172, 193, 0.25);
+    border-top-color: #00acc1;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
