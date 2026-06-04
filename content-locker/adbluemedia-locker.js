@@ -449,11 +449,14 @@
                 offer.click_url ||
                 '#';
 
-            const requirement = offer.description ||
+            const rawRequirement = offer.description ||
                 offer.requirement ||
                 offer.instructions ||
                 offer.conversion ||
-                'Complete this offer';
+                '';
+
+            // Strip HTML tags and decode entities from description
+            const requirement = this.stripHtml(rawRequirement);
 
             const id = offer.offerid ||
                 offer.offer_id ||
@@ -462,6 +465,13 @@
                 index;
 
             return { id: String(id), title, url, requirement };
+        }
+
+        stripHtml(html) {
+            if (!html) return '';
+            const div = document.createElement('div');
+            div.innerHTML = html;
+            return (div.textContent || div.innerText || '').trim();
         }
 
         handleOfferClick(offerId) {
