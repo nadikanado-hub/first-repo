@@ -152,9 +152,7 @@
 
                     <div class="adblue-locker-header">
                         <div class="adblue-locker-icon" id="adblue-locker-icon">
-                            <div class="poster-container" id="poster-container">
-                                <!-- Poster image will be inserted here -->
-                            </div>
+                            <div class="poster-container" id="poster-container"></div>
                             <div class="lock-overlay">
                                 <div class="lock-animation">
                                     <i class="bi bi-lock-fill"></i>
@@ -166,16 +164,30 @@
                     </div>
 
                     <div class="adblue-locker-content">
-                        <div class="adblue-locker-offers-container">
+
+                        <!-- Offer list view -->
+                        <div id="offer-list-view" class="adblue-locker-offers-container">
                             <div class="offers-loading" id="offers-loading">
                                 <div class="loading-spinner"></div>
                             </div>
-                            <div id="offers-container" class="offers-grid">
-                                <!-- Offers will be loaded here dynamically -->
-                            </div>
+                            <div id="offers-container" class="offers-grid"></div>
                             <div id="offers-error" class="offers-error" style="display: none;">
                                 <i class="bi bi-exclamation-triangle"></i>
                                 <p>Unable to load offers. Please refresh.</p>
+                            </div>
+                        </div>
+
+                        <!-- Offer detail view (shown when user taps an offer) -->
+                        <div id="offer-detail-view" class="offer-detail-view" style="display: none;">
+                            <div class="offer-detail-title" id="offer-detail-title"></div>
+                            <div class="offer-detail-description" id="offer-detail-description"></div>
+                            <div class="offer-detail-actions">
+                                <button class="offer-btn-back" id="offer-btn-back">
+                                    <i class="bi bi-arrow-left"></i> Back
+                                </button>
+                                <a class="offer-btn-start" id="offer-btn-start" href="#" target="_blank" rel="noopener noreferrer">
+                                    Start <i class="bi bi-arrow-right"></i>
+                                </a>
                             </div>
                             <div id="offer-waiting-status" class="offer-waiting-status" style="display: none;" role="status">
                                 <div class="waiting-spinner"></div>
@@ -183,6 +195,7 @@
                                 <p class="waiting-timeout-message" style="display: none;">Still waiting? Finish the offer or try another one below.</p>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="adblue-locker-footer">
@@ -406,32 +419,65 @@
 
             this.ensureSessionId();
 
-            this.offersContainer.innerHTML = offers.map((offer, index) => {
-                const normalizedOffer = this.normalizeOffer(offer, index);
-                const trackedUrl = this.appendTrackingToUrl(normalizedOffer.url);
+            // Store normalized offers for detail view lookup
+            this._offers = offers.map((offer, index) => this.normalizeOffer(offer, index));
 
+            this.offersContainer.innerHTML = this._offers.map((offer) => {
                 return `
-                    <a href="${this.escapeHtml(trackedUrl)}"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="offer-card"
-                       data-offer-id="${this.escapeHtml(normalizedOffer.id)}"
-                       title="${this.escapeHtml(normalizedOffer.requirement)}">
+                    <div class="offer-card"
+                         data-offer-id="${this.escapeHtml(offer.id)}">
                         <div class="offer-content">
                             <div class="offer-info">
-                                <div class="offer-title">${this.escapeHtml(normalizedOffer.title)}</div>
-                                <div class="offer-requirement">${this.escapeHtml(normalizedOffer.requirement)}</div>
+                                <div class="offer-title">${this.escapeHtml(offer.title)}</div>
+                                <div class="offer-requirement">${this.escapeHtml(offer.requirement)}</div>
                             </div>
+                            <div class="offer-arrow"><i class="bi bi-chevron-right"></i></div>
                         </div>
-                    </a>
+                    </div>
                 `;
             }).join('');
 
             this.offersContainer.querySelectorAll('.offer-card').forEach(card => {
                 card.addEventListener('click', () => {
-                    this.handleOfferClick(card.dataset.offerId);
+                    const offer = this._offers.find(o => o.id === card.dataset.offerId);
+                    if (offer) this.showOfferDetail(offer);
                 });
             });
+        }
+
+        showOfferDetail(offer) {
+            const listView   = document.getElementById('offer-list-view');
+            const detailView = document.getElementById('offer-detail-view');
+            const titleEl    = document.getElementById('offer-detail-title');
+            const descEl     = document.getElementById('offer-detail-description');
+            const startBtn   = document.getElementById('offer-btn-start');
+            const backBtn    = document.getElementById('offer-btn-back');
+
+            if (!detailView) return;
+
+            titleEl.textContent  = offer.title;
+            descEl.textContent   = offer.requirement || 'Complete this offer to unlock access.';
+
+            const trackedUrl = this.appendTrackingToUrl(offer.url);
+            startBtn.href = trackedUrl;
+
+            // Start button click → open offer + begin postback polling
+            startBtn.onclick = (e) => {
+                this.handleOfferClick(offer.id);
+            };
+
+            backBtn.onclick = () => this.hideOfferDetail();
+
+            listView.style.display  = 'none';
+            detailView.style.display = 'block';
+        }
+
+        hideOfferDetail() {
+            const listView   = document.getElementById('offer-list-view');
+            const detailView = document.getElementById('offer-detail-view');
+            this.hideWaitingStatus();
+            if (listView)   listView.style.display   = 'block';
+            if (detailView) detailView.style.display = 'none';
         }
 
         normalizeOffer(offer, index) {
