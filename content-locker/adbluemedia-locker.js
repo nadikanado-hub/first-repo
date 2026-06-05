@@ -402,11 +402,6 @@
         }
 
         handleOffersResponse(offers) {
-            // Log first offer to inspect all available fields from OGAds API
-            if (offers && offers.length > 0) {
-                console.log('[OGAds] Raw offer fields:', Object.keys(offers[0]));
-                console.log('[OGAds] First offer sample:', offers[0]);
-            }
             if (this.loadingElement) {
                 this.loadingElement.style.display = 'none';
             }
@@ -500,13 +495,14 @@
                 offer.click_url ||
                 '#';
 
-            const rawRequirement = offer.description ||
+            const rawRequirement = offer.adcopy ||
+                offer.description ||
                 offer.requirement ||
                 offer.instructions ||
                 offer.conversion ||
                 '';
 
-            // Strip HTML tags and decode entities from description
+            // Strip HTML tags and decode entities
             const requirement = this.stripHtml(rawRequirement);
 
             const id = offer.offerid ||
