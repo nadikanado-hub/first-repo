@@ -402,6 +402,11 @@
         }
 
         handleOffersResponse(offers) {
+            // Log first offer to inspect all available fields from OGAds API
+            if (offers && offers.length > 0) {
+                console.log('[OGAds] Raw offer fields:', Object.keys(offers[0]));
+                console.log('[OGAds] First offer sample:', offers[0]);
+            }
             if (this.loadingElement) {
                 this.loadingElement.style.display = 'none';
             }
