@@ -12,7 +12,7 @@ window.OGADS_CONFIG = {
     ],
     maxOffers: 3,
     minOffers: '',
-    ctype: '',
+    ctype: '3', // 1 (CPI) + 2 (CPA) only
     requiredOffers: 1,
     // postback = unlock only after OGAds conversion hits streamaio.com hub
     unlockMode: 'postback',
