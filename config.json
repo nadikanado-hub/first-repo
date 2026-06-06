@@ -922,9 +922,39 @@
 				"https://popcima.com/images/primevideo.mp4",
 				"https://popcima.com/images/primevideo.mp4"
 			]
+		},
+		{
+		
+			"id": 261145,
+			"title": "The Amazing Digital Circus",
+			"description": "A woman finds herself trapped in a virtual circus where she and five other humans are subject to the whims of a wacky AI ringmaster. In this digital purgatory they must face frightening NPCs and cope with their own personal traumas.",
+			"thumbnail": "https://image.tmdb.org/t/p/original/fgd0KrPJLsTG3NRsbu6VbC46MOV.jpg",
+			"poster": "https://image.tmdb.org/t/p/w1280/lpfrgfomX8uNFxv4VaEzvJGs9TK.jpg",
+			"quality": "HD",
+			"duration": "N/A",
+			"rating": "8.2",
+			"genre": "Drama",
+			"releaseDate": "2026",
+			"director": "Karen Rosenfelt",
+			"cast": "Lola Tung, Christopher Briney, Gavin Casalegno, Sean Kaufman, Rain Spencer, Jackie Chung",
+			"production": "Amazon Studios",
+			"season": "season 1",
+			"seasonEpisodesVids": [
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4",
+				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4"
+
+			]
 		}
 	],
 	"HomeSliderIds": [
+		261145,
 		273240,
 		936075,
 		124364,
@@ -967,6 +997,7 @@
 		1243341
 	],
 	"TrendingNowIds": [
+		261145,
 		936075,
 		124364,
 		85552,
@@ -1004,6 +1035,7 @@
 		1243341
 	],
 	"RecommendedIds": [
+		261145,
 		273240,
 		936075,
 		1339713,
