@@ -951,6 +951,32 @@
 				"https://oncima.com/fmovie/assets/video/TheAmazingDigitalCircus.mp4"
 
 			]
+		},
+		{
+			"id": 260592,
+			"title": "Every Year After (2026) ",
+			"description": "Six summers to fall in love. One moment to fall apart. A week to get it right. A fun, sweeping, romantic story that asks the question, what if your first love actually was your soulmate?",
+			"thumbnail": "https://image.tmdb.org/t/p/original/cjpA3YCKLpMzGzeHA1LamsfUvFi.jpg",
+			"poster": "https://image.tmdb.org/t/p/w1280/nZGf0jnSJNXLf8o7iSzzX8qxHX9.jpg",
+			"quality": "HD",
+			"duration": "N/A",
+			"rating": "8.4",
+			"genre": "Drama",
+			"releaseDate": "2026",
+			"director": "N/A",
+			"cast": "N/A",
+			"production": "Prime Video",
+			"season": "season 4",
+			"seasonEpisodesVids": [
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4",
+				"https://popcima.com/images/primevideo.mp4"
+			]
 		}
 	],
 	"HomeSliderIds": [
@@ -1035,6 +1061,7 @@
 		1243341
 	],
 	"RecommendedIds": [
+		260592,
 		261145,
 		273240,
 		936075,
