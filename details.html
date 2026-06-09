@@ -290,7 +290,7 @@
                                     </div>
                                     <div>
                                         <div>Release:</div>
-                                        <span itemprop="dateCreated">  </span>
+                                        <span itemprop="datePublished">  </span>
                                     </div>
                                     <div>
                                         <div>Cast:</div>
@@ -731,16 +731,48 @@
                             "name": item.title,
                             "description": item.description,
                             "image": item.poster,
-                            "dateCreated": item.releaseDate,
-                            "genre": item.genre,
+                            "datePublished": item.releaseDate,
+                            "genre": item.genre ? item.genre.split(', ') : [],
+                            "duration": item.duration,
                             "url": `https://1fmovie.com/details.html?id=${item.id}&type=${type}`
                         };
-                        const existing = document.querySelector('script[type="application/ld+json"]');
-                        if (existing) existing.remove();
+                        if (item.director && item.director !== 'N/A') {
+                            jsonLd["director"] = [{ "@type": "Person", "name": item.director }];
+                        }
+                        if (item.cast && item.cast !== 'N/A') {
+                            jsonLd["actor"] = item.cast.split(', ').map(name => ({ "@type": "Person", "name": name.trim() }));
+                        }
+                        if (item.production && item.production !== 'N/A') {
+                            jsonLd["productionCompany"] = [{ "@type": "Organization", "name": item.production }];
+                        }
+                        if (item.rating && item.rating !== 'N/A' && !isNaN(parseFloat(item.rating))) {
+                            jsonLd["aggregateRating"] = {
+                                "@type": "AggregateRating",
+                                "ratingValue": parseFloat(item.rating),
+                                "bestRating": 10,
+                                "worstRating": 1,
+                                "ratingCount": 1000
+                            };
+                        }
+                        // BreadcrumbList schema
+                        const breadcrumbLd = {
+                            "@context": "https://schema.org",
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://1fmovie.com/" },
+                                { "@type": "ListItem", "position": 2, "name": type === 'tv' ? "TV Shows" : "Movies", "item": `https://1fmovie.com/#${type}` },
+                                { "@type": "ListItem", "position": 3, "name": item.title }
+                            ]
+                        };
+                        document.querySelectorAll('script[type="application/ld+json"]').forEach(s => s.remove());
                         const ldScript = document.createElement('script');
                         ldScript.type = 'application/ld+json';
                         ldScript.textContent = JSON.stringify(jsonLd);
                         document.head.appendChild(ldScript);
+                        const breadcrumbScript = document.createElement('script');
+                        breadcrumbScript.type = 'application/ld+json';
+                        breadcrumbScript.textContent = JSON.stringify(breadcrumbLd);
+                        document.head.appendChild(breadcrumbScript);
 
                         console.log('Meta tags updated dynamically:', {
                             title: metaTitle?.content,

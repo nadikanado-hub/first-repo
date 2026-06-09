@@ -22,7 +22,7 @@
         <script>
             // Set base path
             (function() {
-                let basePath = window.location.pathname;
+                let basePath = window.location.pathname.replace(/\/[^\/]*\.[^\/]*$/, '');
                 if (basePath.endsWith('/')) {
                     basePath = basePath.slice(0, -1);
                 }
@@ -102,7 +102,8 @@
                 </div>          
             </header>
 
-            <main> 
+            <main>
+                <h1 class="seo-heading">Watch Free Movies &amp; TV Shows Online — 1FMOVIE</h1>
                 <div class="swiper" id="featured">
                     <div class="swiper-wrapper" id="featured-swiper-wrapper">
                         <!-- Slides will be loaded here dynamically -->
@@ -134,7 +135,7 @@
                     // Helper to get correct link for item
                     function getItemLink(item) {
                         // Get base path
-                        let basePath = window.location.pathname;
+                        let basePath = window.location.pathname.replace(/\/[^\/]*\.[^\/]*$/, '');
                         // Remove trailing slash if present
                         if (basePath.endsWith('/')) {
                             basePath = basePath.slice(0, -1);
@@ -162,7 +163,7 @@
                     }
 
                     // Single config fetch for all sections
-                    let basePath = window.location.pathname;
+                    let basePath = window.location.pathname.replace(/\/[^\/]*\.[^\/]*$/, '');
                     // Remove trailing slash if present
                     if (basePath.endsWith('/')) {
                         basePath = basePath.slice(0, -1);
@@ -376,7 +377,42 @@
                                     }
                                 }
                             }, 100);
+
                         });
+                </script>
+                <script>
+                    (function() {
+                        var bp = window.location.pathname.replace(/\/[^\/]*\.[^\/]*$/, '');
+                        if (bp.endsWith('/')) bp = bp.slice(0, -1);
+                        if (bp === '/' || bp === '') bp = '';
+                        fetch(bp + '/config.json')
+                            .then(function(r) { return r.json(); })
+                            .then(function(cfg) {
+                                var all = (cfg.Movies || []).concat(cfg.Series || []);
+                                var trending = (cfg.TrendingNowIds || []).slice(0, 20)
+                                    .map(function(id) { return all.find(function(item) { return item.id == id; }); })
+                                    .filter(Boolean);
+                                var schema = {
+                                    "@context": "https://schema.org",
+                                    "@type": "ItemList",
+                                    "name": "Trending Movies & TV Shows on 1FMOVIE",
+                                    "description": "Watch free movies and TV shows online in HD quality — no registration required.",
+                                    "url": "https://1fmovie.com/",
+                                    "itemListElement": trending.map(function(item, i) {
+                                        return {
+                                            "@type": "ListItem",
+                                            "position": i + 1,
+                                            "url": "https://1fmovie.com/details.html?id=" + item.id + "&type=" + (item.seasonEpisodesVids && item.seasonEpisodesVids.length > 0 ? 'tv' : 'movie'),
+                                            "name": item.title
+                                        };
+                                    })
+                                };
+                                var s = document.createElement('script');
+                                s.type = 'application/ld+json';
+                                s.textContent = JSON.stringify(schema);
+                                document.head.appendChild(s);
+                            });
+                    })();
                 </script>
                 
                 <section id="trending">
@@ -503,7 +539,7 @@
             let searchTimeout;
             
             // Load all items from config
-            let basePath = window.location.pathname;
+            let basePath = window.location.pathname.replace(/\/[^\/]*\.[^\/]*$/, '');
             // Remove trailing slash if present
             if (basePath.endsWith('/')) {
                 basePath = basePath.slice(0, -1);
@@ -630,7 +666,7 @@
             
             // Helper function to get correct link for item
             function getItemLink(item) {
-                let basePath = window.location.pathname;
+                let basePath = window.location.pathname.replace(/\/[^\/]*\.[^\/]*$/, '');
                 // Remove trailing slash if present
                 if (basePath.endsWith('/')) {
                     basePath = basePath.slice(0, -1);

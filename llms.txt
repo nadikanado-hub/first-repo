@@ -1,0 +1,37 @@
+# 1FMOVIE
+> Free online streaming site for movies and TV shows. No registration required. HD quality.
+
+## About
+1FMOVIE is a free streaming website where users can watch movies and TV series online in HD and 4K quality. No registration or account required.
+
+## Content Library
+- Movies: Action, Adventure, Thriller, Drama, Comedy, Horror, Animation, Sci-Fi, Romance, Family, Sport, Music
+- TV Shows: Multiple genres including Drama, Sci-Fi, Fantasy, Action, Animation
+- Quality: HD and 4K available
+- New releases and latest episodes updated regularly
+
+## Notable Titles Available
+- Mission: Impossible - The Final Reckoning
+- Superman (2025)
+- The Fantastic Four: First Steps
+- Lilo & Stitch (2025)
+- How to Train Your Dragon (2025)
+- F1 (2025)
+- Thunderbolts
+- Demon Slayer: Infinity Castle
+- Stranger Things Season 5
+- The Boys Season 5
+- Euphoria Season 3
+- Dan Da Dan
+- Hazbin Hotel
+- Invincible
+- ONE PIECE Season 2
+- Daredevil: Born Again
+
+## How to Find Content
+- Homepage: https://1fmovie.com — browse trending, recommended, and latest titles
+- Movie detail page: https://1fmovie.com/details.html?id={tmdb_id}&type=movie
+- TV show detail page: https://1fmovie.com/details.html?id={tmdb_id}&type=tv
+
+## Site Policy
+This site does not store any media files on its servers. All content is linked to third-party hosting services.
